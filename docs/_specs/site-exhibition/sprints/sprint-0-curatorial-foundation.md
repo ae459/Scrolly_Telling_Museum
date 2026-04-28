@@ -1,5 +1,9 @@
 # Sprint 0 — Curatorial Foundation
 
+## Specs Covered
+
+- `docs/_specs/site-exhibition/spec.md`
+
 ## Goal
 
 Restore the durable foundation docs that explain the museum as both a curatorial object and an implementation system.

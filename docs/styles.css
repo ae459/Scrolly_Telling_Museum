@@ -169,7 +169,7 @@ section[id] {
 .transition-block__title {
   margin: 0;
   font-size: clamp(2rem, 4.4vw, 4.2rem);
-  line-height: 1.02;
+  line-height: 1.08;
   text-transform: uppercase;
   max-width: 12ch;
   text-wrap: balance;

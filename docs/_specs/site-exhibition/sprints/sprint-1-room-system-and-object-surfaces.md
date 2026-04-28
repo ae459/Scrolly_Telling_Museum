@@ -1,5 +1,9 @@
 # Sprint 1 — Room System And Object Surfaces
 
+## Specs Covered
+
+- `docs/_specs/site-exhibition/spec.md`
+
 ## Goal
 
 Define the museum's page taxonomy and collection logic so future additions remain curator-driven.

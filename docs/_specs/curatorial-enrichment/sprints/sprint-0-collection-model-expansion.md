@@ -1,5 +1,9 @@
 # Sprint 0 — Collection Model Expansion
 
+## Specs Covered
+
+- `docs/_specs/curatorial-enrichment/spec.md`
+
 ## Goal
 
 Make the collection model strong enough to govern future object additions.

@@ -1,5 +1,9 @@
 # Sprint 2 — Full-Site Visual Review
 
+## Specs Covered
+
+- `docs/_specs/visual-qa/spec.md`
+
 ## Goal
 
 Review the full exhibition for continuity after component-level alignment work.

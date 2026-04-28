@@ -1,5 +1,9 @@
 # Sprint 2 — QA And Continuity
 
+## Specs Covered
+
+- `docs/_specs/site-exhibition/spec.md`
+
 ## Goal
 
 Define how this static museum should be checked and maintained across future sessions.

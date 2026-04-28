@@ -1,5 +1,9 @@
 # Sprint 4: Navigation and Entry Refinement
 
+## Specs Covered
+
+- `docs/_specs/site-exhibition/spec.md`
+
 **Status:** Complete (April 23, 2026)
 
 ---

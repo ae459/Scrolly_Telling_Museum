@@ -1,5 +1,9 @@
 # Sprint 2 — Room Enrichment And Consistency
 
+## Specs Covered
+
+- `docs/_specs/curatorial-enrichment/spec.md`
+
 ## Goal
 
 Improve room-level evidence and then review the whole exhibition for consistency.

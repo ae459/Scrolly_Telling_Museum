@@ -1,5 +1,9 @@
 # Sprint 1 — Portrait And Object Card System
 
+## Specs Covered
+
+- `docs/_specs/visual-qa/spec.md`
+
 ## Goal
 
 Align the portrait cards and non-comic object cards into a shared visual family.

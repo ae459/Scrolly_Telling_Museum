@@ -1,5 +1,9 @@
 # Sprint 1 — Cast And Institution Logic
 
+## Specs Covered
+
+- `docs/_specs/curatorial-enrichment/spec.md`
+
 ## Goal
 
 Make the people and studios surface behave more like a cast page than a flat directory.

@@ -1,5 +1,9 @@
 # Sprint 0 — Comic Card System
 
+## Specs Covered
+
+- `docs/_specs/visual-qa/spec.md`
+
 ## Goal
 
 Create a unified visual system for the main comic issue cards.
