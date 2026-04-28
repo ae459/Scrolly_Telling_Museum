@@ -59,37 +59,56 @@
         </div>
       </header>
 
+      <!-- full-bleed immersive hero – outside site-main width constraint -->
+      <section
+        class="chapter-hero--immersive theme-marvel"
+        style="
+          --hero-bg-image:
+            url(&quot;../media/bullpen-desk.jpeg&quot;),
+            url(&quot;../media/amazing-fantasy-15.jpeg&quot;);
+          --chapter-accent: var(--red);
+        "
+        data-slide="1"
+      >
+        <div class="chapter-hero-inner">
+          <div>
+            <p class="section-heading__eyebrow">Room 2 · Reinvention</p>
+            <h1 class="chapter-hero__title">Marvel Age Expansion</h1>
+            <p class="chapter-hero__period">1961–1970s</p>
+          </div>
+          <div class="chapter-hero__support">
+            <p class="chapter-hero__lede">
+              This room treats the Silver Age as Marvel's decisive reinvention:
+              a shared universe, flawed heroes, and creators who made
+              personality part of the brand.
+            </p>
+            <p class="copy">
+              Marvel becomes a system here. The Fantastic Four, Spider-Man, the
+              Avengers, and the X-Men turn isolated heroes into a connected
+              narrative engine.
+            </p>
+            <div class="chapter-hero__links">
+              <a class="button-link" href="cinematic-age.html"
+                >Continue to the Cinematic Age</a
+              >
+              <a class="button-link" href="../people-and-studios.html"
+                >See the cast and studios</a
+              >
+            </div>
+          </div>
+          <!-- /chapter-hero__support -->
+        </div>
+        <!-- /chapter-hero-inner -->
+        <div class="scroll-arrow" aria-hidden="true">
+          <span>Explore room</span>
+          <span class="scroll-arrow__chevron"></span>
+        </div>
+      </section>
+      <!-- /chapter-hero--immersive -->
+
       <main class="site-main">
         <article class="hero-panel theme-marvel">
-          <section class="chapter-hero">
-            <div>
-              <p class="section-heading__eyebrow">Room 2 · Reinvention</p>
-              <h1 class="chapter-hero__title">Marvel Age Expansion</h1>
-              <p class="chapter-hero__period">1961–1970s</p>
-            </div>
-            <div class="chapter-hero__support">
-              <p class="chapter-hero__lede">
-                This room treats the Silver Age as Marvel's decisive
-                reinvention: a shared universe, flawed heroes, and creators who
-                made personality part of the brand.
-              </p>
-              <p class="copy">
-                Marvel becomes a system here. The Fantastic Four, Spider-Man,
-                the Avengers, and the X-Men turn isolated heroes into a
-                connected narrative engine.
-              </p>
-              <div class="chapter-hero__links">
-                <a class="button-link" href="cinematic-age.html"
-                  >Continue to the Cinematic Age</a
-                >
-                <a class="button-link" href="../people-and-studios.html"
-                  >See the cast and studios</a
-                >
-              </div>
-            </div>
-          </section>
-
-          <section class="chapter-section">
+          <section class="chapter-section" data-slide="2">
             <div class="section-heading">
               <p class="section-heading__eyebrow">Curatorial claim</p>
               <h2 class="section-heading__title">
@@ -122,7 +141,7 @@
             </div>
           </section>
 
-          <section class="chapter-section">
+          <section class="chapter-section" data-slide="3">
             <div class="section-heading">
               <p class="section-heading__eyebrow">Must-see issues</p>
               <h2 class="section-heading__title">
@@ -183,7 +202,7 @@
             </div>
           </section>
 
-          <section class="chapter-section">
+          <section class="chapter-section slide--dark" data-slide="4">
             <div class="section-heading">
               <p class="section-heading__eyebrow">Creative cast</p>
               <h2 class="section-heading__title">
@@ -252,5 +271,8 @@
         </article>
       </main>
     </div>
+    <div class="scroll-progress" aria-hidden="true"></div>
+    <div class="slide-counter" aria-hidden="true">01 — 04</div>
+    <script src="../js/scroll-enhancements.js"></script>
   </body>
 </html>

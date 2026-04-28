@@ -59,39 +59,54 @@
         </div>
       </header>
 
+      <!-- full-bleed immersive hero – outside site-main width constraint -->
+      <section
+        class="chapter-hero--immersive theme-golden"
+        style="
+          --hero-bg-image:
+            url(&quot;../media/Captain%20America%20Comics%20013%20(Timely%2C%201942)%20(c2c)%20(Mark%20Bowen%20scans%20%26%20edits)_0000.jpg&quot;),
+            url(&quot;../media/All-Winners%20Comics%20001%20(Timely)%20(1941)%20(c2c)%20(Mark%20Bowen)_0000.jpg&quot;);
+          --chapter-accent: var(--yellow);
+        "
+        data-slide="1"
+      >
+        <div class="chapter-hero-inner">
+          <div>
+            <p class="section-heading__eyebrow">Room 1 · Foundation</p>
+            <h1 class="chapter-hero__title">Golden Age Origins</h1>
+            <p class="chapter-hero__period">1939–1950s</p>
+          </div>
+          <div class="chapter-hero__support">
+            <p class="chapter-hero__lede">
+              The exhibition begins with Timely Comics, wartime iconography, and
+              the moment Marvel first proves that costumed heroes can become
+              mass culture.
+            </p>
+            <p class="copy">
+              This room frames Marvel as a publisher born from urgency: pulp
+              economics, wartime symbolism, and the search for iconic identity.
+            </p>
+            <div class="chapter-hero__links">
+              <a class="button-link" href="marvel-age.html"
+                >Continue to the Marvel Age</a
+              >
+              <a
+                class="button-link"
+                href="../reading-maps/publication-lineage.html"
+                >Check the lineage map</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="scroll-arrow" aria-hidden="true">
+          <span>Explore room</span>
+          <span class="scroll-arrow__chevron"></span>
+        </div>
+      </section>
+
       <main class="site-main">
         <article class="hero-panel theme-golden">
-          <section class="chapter-hero">
-            <div>
-              <p class="section-heading__eyebrow">Room 1 · Foundation</p>
-              <h1 class="chapter-hero__title">Golden Age Origins</h1>
-              <p class="chapter-hero__period">1939–1950s</p>
-            </div>
-            <div class="chapter-hero__support">
-              <p class="chapter-hero__lede">
-                The exhibition begins with Timely Comics, wartime iconography,
-                and the moment Marvel first proves that costumed heroes can
-                become mass culture.
-              </p>
-              <p class="copy">
-                This room frames Marvel as a publisher born from urgency: pulp
-                economics, wartime symbolism, and the search for iconic
-                identity.
-              </p>
-              <div class="chapter-hero__links">
-                <a class="button-link" href="marvel-age.html"
-                  >Continue to the Marvel Age</a
-                >
-                <a
-                  class="button-link"
-                  href="../reading-maps/publication-lineage.html"
-                  >Check the lineage map</a
-                >
-              </div>
-            </div>
-          </section>
-
-          <section class="chapter-section">
+          <section class="chapter-section" data-slide="2">
             <div class="section-heading">
               <p class="section-heading__eyebrow">Why this room matters</p>
               <h2 class="section-heading__title">
@@ -123,7 +138,7 @@
             </div>
           </section>
 
-          <section class="chapter-section">
+          <section class="chapter-section" data-slide="3">
             <div class="section-heading">
               <p class="section-heading__eyebrow">Anchor objects</p>
               <h2 class="section-heading__title">
@@ -167,7 +182,7 @@
             </div>
           </section>
 
-          <section class="chapter-section">
+          <section class="chapter-section slide--dark" data-slide="4">
             <div class="section-heading">
               <p class="section-heading__eyebrow">Cast</p>
               <h2 class="section-heading__title">
@@ -225,5 +240,8 @@
         </article>
       </main>
     </div>
+    <div class="scroll-progress" aria-hidden="true"></div>
+    <div class="slide-counter" aria-hidden="true">01 — 04</div>
+    <script src="../js/scroll-enhancements.js"></script>
   </body>
 </html>

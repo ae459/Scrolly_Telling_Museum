@@ -59,39 +59,55 @@
         </div>
       </header>
 
+      <!-- full-bleed immersive hero – outside site-main width constraint -->
+      <section
+        class="chapter-hero--immersive theme-cinematic"
+        style="
+          --hero-bg-image:
+            url(&quot;../media/mcu-prop-wall.jpeg&quot;),
+            url(&quot;../media/infinity-gauntlet.jpeg&quot;);
+          --chapter-accent: #58a4e0;
+        "
+        data-slide="1"
+      >
+        <div class="chapter-hero-inner">
+          <div>
+            <p class="section-heading__eyebrow">Room 3 · Scale</p>
+            <h1 class="chapter-hero__title">Crossover and Cinematic Age</h1>
+            <p class="chapter-hero__period">1980s–Present</p>
+          </div>
+          <div class="chapter-hero__support">
+            <p class="chapter-hero__lede">
+              The final room follows Marvel from darker prestige storytelling
+              into crossover spectacle and the global film infrastructure of the
+              MCU.
+            </p>
+            <p class="copy">
+              Marvel's modern identity is not just bigger stories. It is the
+              conversion of comics logic into a franchise system that shapes
+              movies, merchandise, and collective memory.
+            </p>
+            <div class="chapter-hero__links">
+              <a class="button-link" href="../guides/collection-highlights.html"
+                >Enter the object gallery</a
+              >
+              <a class="button-link" href="../home.html"
+                >Return to the opening gallery</a
+              >
+            </div>
+          </div>
+        </div>
+        <!-- /chapter-hero-inner -->
+        <div class="scroll-arrow" aria-hidden="true">
+          <span>Explore room</span>
+          <span class="scroll-arrow__chevron"></span>
+        </div>
+      </section>
+      <!-- /chapter-hero--immersive -->
+
       <main class="site-main">
         <article class="hero-panel theme-cinematic">
-          <section class="chapter-hero">
-            <div>
-              <p class="section-heading__eyebrow">Room 3 · Scale</p>
-              <h1 class="chapter-hero__title">Crossover and Cinematic Age</h1>
-              <p class="chapter-hero__period">1980s–Present</p>
-            </div>
-            <div class="chapter-hero__support">
-              <p class="chapter-hero__lede">
-                The final room follows Marvel from darker prestige storytelling
-                into crossover spectacle and the global film infrastructure of
-                the MCU.
-              </p>
-              <p class="copy">
-                Marvel's modern identity is not just bigger stories. It is the
-                conversion of comics logic into a franchise system that shapes
-                movies, merchandise, and collective memory.
-              </p>
-              <div class="chapter-hero__links">
-                <a
-                  class="button-link"
-                  href="../guides/collection-highlights.html"
-                  >Enter the object gallery</a
-                >
-                <a class="button-link" href="../home.html"
-                  >Return to the opening gallery</a
-                >
-              </div>
-            </div>
-          </section>
-
-          <section class="chapter-section">
+          <section class="chapter-section" data-slide="2">
             <div class="section-heading">
               <p class="section-heading__eyebrow">Modern claim</p>
               <h2 class="section-heading__title">
@@ -123,7 +139,7 @@
             </div>
           </section>
 
-          <section class="chapter-section">
+          <section class="chapter-section slide--dark" data-slide="3">
             <div class="section-heading">
               <p class="section-heading__eyebrow">Scale artifacts</p>
               <h2 class="section-heading__title">
@@ -205,5 +221,8 @@
         </article>
       </main>
     </div>
+    <div class="scroll-progress" aria-hidden="true"></div>
+    <div class="slide-counter" aria-hidden="true">01 — 03</div>
+    <script src="../js/scroll-enhancements.js"></script>
   </body>
 </html>

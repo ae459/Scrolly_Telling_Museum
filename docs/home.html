@@ -61,7 +61,11 @@
 
       <main class="site-main">
         <article class="hero-panel theme-home">
-          <section id="opening" class="home-opening">
+          <section
+            id="opening"
+            class="home-opening home-opening--fullscreen"
+            data-slide="1"
+          >
             <div class="home-opening__intro home-opening__intro--immersive">
               <div class="home-opening__copy">
                 <p class="section-heading__eyebrow">Opening gallery</p>
@@ -96,6 +100,10 @@
                   >
                 </div>
               </div>
+              <div class="scroll-arrow" aria-hidden="true">
+                <span>Explore</span>
+                <span class="scroll-arrow__chevron"></span>
+              </div>
               <div class="home-opening__stage">
                 <figure
                   class="artifact-figure feature-object feature-object--primary"
@@ -128,7 +136,11 @@
             </div>
           </section>
 
-          <section id="chronology" class="chapter-section">
+          <section
+            id="chronology"
+            class="chapter-section slide--dark"
+            data-slide="2"
+          >
             <div class="section-heading">
               <p class="section-heading__eyebrow">Main route</p>
               <h2 class="section-heading__title">
@@ -176,6 +188,7 @@
           <section
             id="golden-age"
             class="chapter-section room-band room-band--golden"
+            data-slide="3"
           >
             <div class="room-band__header">
               <div class="section-heading">
@@ -869,6 +882,8 @@
         </nav>
       </footer>
     </div>
+    <div class="scroll-progress" aria-hidden="true"></div>
+    <div class="slide-counter" aria-hidden="true">01 — 03</div>
+    <script src="js/scroll-enhancements.js"></script>
   </body>
 </html>
-

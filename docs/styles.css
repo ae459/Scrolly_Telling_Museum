@@ -1228,3 +1228,265 @@ section[id] {
     max-width: none;
   }
 }
+
+/* ==========================================================
+   SCROLLYTELLING ENHANCEMENTS
+   ========================================================== */
+
+body {
+  overflow-x: hidden;
+}
+
+/* ── Progress bar ── */
+.scroll-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 3px;
+  width: 0%;
+  background: var(--chapter-accent, var(--red));
+  z-index: 200;
+  transition: width 0.08s linear;
+  pointer-events: none;
+}
+
+/* ── Slide counter ── */
+.slide-counter {
+  position: fixed;
+  bottom: 1.75rem;
+  right: 1.5rem;
+  z-index: 50;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--muted);
+  background: var(--paper-soft);
+  border: var(--frame);
+  padding: 0.32rem 0.6rem;
+  box-shadow: var(--shadow-soft);
+  pointer-events: none;
+}
+
+/* ── Scroll arrow cue ── */
+.scroll-arrow {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.45rem;
+  font-size: 0.67rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  opacity: 0.68;
+  cursor: default;
+  user-select: none;
+}
+
+.scroll-arrow__chevron {
+  width: 1.3rem;
+  height: 1.3rem;
+  border-right: 2.5px solid currentColor;
+  border-bottom: 2.5px solid currentColor;
+  transform: rotate(45deg);
+  animation: scrollBounce 2.1s ease-in-out infinite;
+}
+
+@keyframes scrollBounce {
+  0%, 100% { transform: rotate(45deg) translateY(0); }
+  50%       { transform: rotate(45deg) translateY(8px); }
+}
+
+/* ── Full-bleed immersive chapter hero ── */
+.chapter-hero--immersive {
+  position: relative;
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+  color: white;
+  /* pull out of site-main width constraint */
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+}
+
+.chapter-hero--immersive::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: var(--hero-bg-image);
+  background-size: cover;
+  background-position: center 30%;
+  filter: saturate(0.62) contrast(1.06);
+  transform: scale(1.06);
+  transition: transform 14s ease-out;
+  z-index: 0;
+}
+
+.chapter-hero--immersive-loaded::before {
+  transform: scale(1.0);
+}
+
+.chapter-hero--immersive::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    140deg,
+    rgba(6, 9, 16, 0.88) 0%,
+    rgba(6, 9, 16, 0.58) 55%,
+    rgba(6, 9, 16, 0.34) 100%
+  );
+  z-index: 0;
+}
+
+.chapter-hero--immersive > * {
+  position: relative;
+  z-index: 1;
+}
+
+/* constrained content wrapper inside the full-bleed hero */
+.chapter-hero-inner {
+  width: min(calc(100% - 2rem), var(--max-width));
+  margin-inline: auto;
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(18rem, 0.85fr);
+  gap: var(--space-xl);
+  align-items: center;
+  padding: clamp(2.5rem, 5vw, 4.5rem) var(--space-m);
+}
+
+.chapter-hero-inner > * {
+  min-width: 0;
+}
+
+/* text overrides inside immersive */
+.chapter-hero--immersive .section-heading__eyebrow {
+  color: var(--yellow);
+  opacity: 1;
+}
+
+.chapter-hero--immersive .chapter-hero__title {
+  color: white;
+  font-size: clamp(3rem, 7vw, 6rem);
+  max-width: 10ch;
+}
+
+.chapter-hero--immersive .chapter-hero__period {
+  color: rgba(255, 255, 255, 0.52);
+}
+
+.chapter-hero--immersive .chapter-hero__lede,
+.chapter-hero--immersive .copy {
+  color: rgba(255, 255, 255, 0.82);
+}
+
+.chapter-hero--immersive .button-link {
+  background: rgba(244, 239, 226, 0.92);
+  color: var(--ink);
+}
+
+.chapter-hero--immersive .button-link--dark {
+  background: var(--ink);
+  color: white;
+}
+
+/* scroll arrow anchored to bottom of immersive hero */
+.chapter-hero--immersive .scroll-arrow {
+  color: rgba(255, 255, 255, 0.55);
+  position: absolute;
+  bottom: 2.25rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+}
+
+/* ── Dark evidence slide ── */
+.slide--dark {
+  background: var(--ink);
+  color: white;
+  border-color: rgba(255, 255, 255, 0.12);
+  padding: clamp(1.5rem, 3vw, 2.5rem);
+}
+
+.slide--dark .section-heading__title,
+.slide--dark h2,
+.slide--dark h3 {
+  color: white;
+}
+
+.slide--dark .section-heading__eyebrow,
+.slide--dark .kicker {
+  color: var(--yellow);
+}
+
+.slide--dark .copy,
+.slide--dark .chapter-section__body,
+.slide--dark .content-card__description,
+.slide--dark .content-card__footer,
+.slide--dark .content-card__meta {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.slide--dark .content-card {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1.5px solid rgba(255, 255, 255, 0.14);
+  box-shadow: none;
+}
+
+.slide--dark .content-card:hover {
+  background: rgba(255, 255, 255, 0.11);
+  transform: translate(-2px, -2px);
+  box-shadow: 5px 5px 0 rgba(255, 255, 255, 0.14);
+}
+
+.slide--dark .content-card__title {
+  color: white;
+}
+
+.slide--dark .quote-block {
+  background: rgba(255, 255, 255, 0.06);
+  color: rgba(255, 255, 255, 0.82);
+  border-left-color: var(--chapter-accent, var(--yellow));
+}
+
+/* ── Fullscreen opening on home page ── */
+.home-opening--fullscreen {
+  min-height: calc(100svh - 9rem);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-bottom: 3.5rem;
+  position: relative;
+}
+
+.home-opening--fullscreen .scroll-arrow {
+  position: absolute;
+  bottom: 1.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  color: var(--muted);
+}
+
+/* ── Minimal header on scroll ── */
+.site-header--minimal .site-header__subnav {
+  max-height: 0;
+  overflow: hidden;
+  padding-top: 0;
+  padding-bottom: 0;
+  border-top-width: 0;
+  transition: max-height 0.35s ease, padding 0.35s ease, border 0.35s ease;
+}
+
+/* ── Responsive ── */
+@media (max-width: 900px) {
+  .chapter-hero-inner {
+    grid-template-columns: 1fr;
+    padding-top: 5rem;
+  }
+
+  .slide-counter {
+    display: none;
+  }
+}
