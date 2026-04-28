@@ -1,3 +1,5 @@
+Github Pages Link: https://ae459.github.io/Scrolly_Telling_Museum/
+
 # Marvel Bauhaus Museum
 
 Marvel Bauhaus Museum is a static HTML/CSS digital exhibition that presents Marvel history as a curated museum experience rather than a conventional fan site. The project combines Bauhaus-inspired visual order with comic-book subject matter, organizing the collection around chronology, artifacts, creators, studios, and publication lineage.
